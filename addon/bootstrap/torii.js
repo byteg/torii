@@ -6,6 +6,7 @@ import FacebookOauth2Provider from 'torii/providers/facebook-oauth2';
 import ApplicationAdapter from 'torii/adapters/application';
 import TwitterProvider from 'torii/providers/twitter-oauth1';
 import GithubOauth2Provider from 'torii/providers/github-oauth2';
+import InstagramOauth2Provider from 'torii/providers/instagram-oauth2';
 import AzureAdOauth2Provider from 'torii/providers/azure-ad-oauth2';
 import StripeConnectProvider from 'torii/providers/stripe-connect';
 import EdmodoConnectProvider from 'torii/providers/edmodo-connect';
@@ -27,6 +28,7 @@ export default function(application) {
   application.register('torii-provider:facebook-oauth2', FacebookOauth2Provider);
   application.register('torii-provider:twitter', TwitterProvider);
   application.register('torii-provider:github-oauth2', GithubOauth2Provider);
+  application.register('torii-provider:instagram-oauth2', InstagramOauth2Provider);
   application.register('torii-provider:azure-ad-oauth2', AzureAdOauth2Provider);
   application.register('torii-provider:stripe-connect', StripeConnectProvider);
   application.register('torii-provider:edmodo-connect', EdmodoConnectProvider);
