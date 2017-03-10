@@ -10,7 +10,7 @@ var InstagramOauth2 = Oauth2.extend({
   name:       'instagram-oauth2',
   baseUrl:    'https://api.instagram.com/oauth/authorize/',
 
-  responseParams: ['code', 'state'],
+  responseParams: ['code'],
 
   redirectUri: configurable('redirectUri', function(){
     // A hack that allows redirectUri to be configurable
